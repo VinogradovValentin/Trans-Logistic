@@ -3,7 +3,7 @@ body {
 
     font-family: 'PTSans-Regular';
     font-size: 15px;
-    line-height: 1.5;
+    line-height: 1.4;
     color: #585858;
 }
 
@@ -264,6 +264,10 @@ p {
     background: url("../images/map.svg") no-repeat left 30px top 130px;
 }
 
+.section--gray {
+    background-color: #F9F9F9;
+}
+
 .section__title {
     margin-bottom: 40px;
 
@@ -325,7 +329,6 @@ p {
 
 .services__text {
     color: #585858;
-    line-height: 1.4;
 
     margin-bottom: 20px;
 }
@@ -523,3 +526,64 @@ p {
     color: #2C2C2C; 
 }
 
+
+/* Team */
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.team__col {
+    width: 33.3333%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.team__photo {
+    margin-bottom: 13px;
+    width: 370px;
+    height: auto;
+
+    box-shadow: 10px 5px 13px rgba(0, 0, 0, 0.16);
+}
+
+.team__name {
+    margin-bottom: 5px;
+
+    font-family: 'Lato-Black';
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #2C2C2C;
+}
+
+.team__prof {
+    margin-bottom: 11px;
+}
+
+.team__contacts {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #585858;
+}
+
+.team__contacts-icon {
+    width: 16px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.team__contacts li {
+    margin-bottom: 9px;
+}
+
+.team__contacts a {
+    margin-bottom: 9px;
+
+    color: inherit;
+}
+
+.team__contacts a:hover {
+    text-decoration: underline;
+}
