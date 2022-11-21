@@ -37,6 +37,12 @@ p {
     margin: 0;
 }
 
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .container {
     width: 100%;
     max-width: 1230px;
@@ -223,8 +229,8 @@ p {
 /* Btn */
 .btn {
     display: inline-block;
-    vertical-align: top;
-    padding: 11px 20px;
+    vertical-align: middle;
+    padding: 15px 45px;
 
     color: #FFFFFF;
     cursor: pointer;
@@ -254,6 +260,23 @@ p {
     padding: 60px 0;
 }
 
+.section--map {
+    background: url("../images/map.svg") no-repeat left 30px top 130px;
+}
+
+.section__title {
+    margin-bottom: 40px;
+
+    font-family: 'Lato-Black';
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 1.2;
+    color: #2C2C2C;
+}
+
+.section__title span {
+    color: #004AF2;
+}
 
 /* Services */
 .services {
@@ -339,3 +362,164 @@ p {
 
     width: 100%;
 }
+
+
+/* Clients */
+.clients {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.clients__logos {
+    width: 60%;
+}
+
+.clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.clients__list  li {
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.clients__reviews {
+    width: 40%;
+}
+
+.clients-love {
+    display: inline-block;
+    margin-left: 40px;
+    padding-top: 5px;
+    min-height: 47px;
+
+    background: url("../images/icons/heart.svg") no-repeat left 20px top 0;
+
+    font-size: 18px;
+    color: #464646;
+}
+
+
+/* Reviews */
+.reviews {
+    position: relative;
+}
+
+.reviews::before {
+    content: '';
+    display: block;
+    width: 92px;
+    height: 125px;
+    background-image: url(../images/icons/lines.svg);
+
+    position: absolute;
+    top: -15px;
+    left: 5px;
+    z-index: -1;
+}
+
+.reviews__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.reviews__photo {
+    width: 100px;
+    height: 100px;
+}
+
+.reviews__header-content {
+    flex-grow: 1;
+    padding-left: 20px;
+}
+
+.reviews__name {
+    font-family: 'Lato-Black';
+    font-weight: 900;
+    font-size: 18px;
+    color: #2C2C2C;
+}
+
+.reviews__company {
+    font-family: 'Lato-Regular';
+    font-weight: 400;
+    font-size: 15px;
+    color: #2C2C2C;
+    text-transform: uppercase;
+}
+
+.reviews__content {
+    font-family: 'Lato';
+    color: #585858;
+    line-height: 1.8;
+}
+
+.reviews__content p {
+    margin-bottom: 35px;
+}
+
+
+/* Benefits */
+.benefits {
+    display: flex;
+}
+
+.benefits__item {
+    width: 50%;
+}
+
+.benefits-list {
+    width: 100%;
+    max-width: 370px;
+    padding-left: 50px;
+    position: relative;
+
+    background-image: linear-gradient(to bottom, #fff 40%, #a5a5a5 40%);
+    background-size: 2px 35px;
+    background-repeat: repeat-y;
+}
+
+.benefits-list::after,
+.benefits-list::before {
+    content: '';
+    display: block;
+    width: 26px;
+    height: 36px;
+
+    background-repeat: no-repeat;
+    background-color: #fff;
+
+    position: absolute;
+    left: -12px;
+    z-index: 1;
+}
+
+.benefits-list::after {
+    background-image: url(../images/icons/pin-gray.svg);
+
+    top: 0;
+}
+
+.benefits-list::before {
+    background-image: url(../images/icons/pin-green.svg);
+
+    bottom: 0;
+}
+
+.benefits-list__item {
+    margin-bottom: 35px;
+}
+
+.benefits-list__title {
+    margin-bottom: 12px;
+
+    font-family: 'Lato-Black';
+    font-weight: 900;
+    font-size: 21px;
+    line-height: 1.2;
+    color: #2C2C2C; 
+}
+
